@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+int n;
+int i;
+
+printf("informe um numero \n");
+scanf("%d",&n);
+
+if (n % )

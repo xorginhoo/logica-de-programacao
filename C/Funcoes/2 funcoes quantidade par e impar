@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int contapar(int num[]){
+    int par = 0;
+    int i;
+
+    for (i = 0; i < 6; i++)
+    {
+
+        if (num[i] % 2 == 0)
+        {
+            par++;
+        }
+        
+
+    }
+    return par;
+}
+
+int contaimpar(int num[]){
+
+    int impar;
+    int i;
+
+    for ( i = 0; i < 6; i++)
+    {
+        if (num[i] % 2 != 0)
+        {
+            impar++;
+        }
+        
+    }
+        return impar;
+}
+
+int main() {
+
+    int num[6];
+    int i;
+
+    for (i = 0; i < 6; i++)
+    {
+        printf("digite o %d numero:", i + 1);
+        scanf("%d", &num[i]);
+    }
+
+    printf("par:%d \n",contapar(num));
+    printf("impar:%d \n",contaimpar(num));
+
+    return 0;
+}

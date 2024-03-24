@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+void imprime1(int v[5]){
+int i;
+
+for ( i = 0; i < 5; i++)
+{
+    printf("%d",v[i]);
+}
+
+}
+
+
+int main() {
+
+    int vet[5] = {1,2,3,4,5};
+
+    printf("numero:");
+    imprime1(vet);
+
+
+    
+
+
+}
